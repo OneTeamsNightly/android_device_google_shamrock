@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_kernel_google_shamrock",
+    "target_path": "kernel/google/shamrock"
+  },
+  {
+    "repository": "android_vendor_google_shamrock",
+    "target_path": "vendor/google/shamrock"
+  }
+]
