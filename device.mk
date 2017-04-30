@@ -129,18 +129,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/lowi.conf:system/etc/lowi.conf
 
-# Init scripts
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.bt.sh \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.qcom.power.rc \
-    init.qcom.usb.rc \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    ueventd.qcom.rc
-
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
@@ -200,6 +188,16 @@ PRODUCT_COPY_FILES += \
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm8952
+
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/init.qcom.power.rc:root/init.qcom.power.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.sh:root/init.qcom.sh \
+    $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc
 
 # RIL
 PRODUCT_PACKAGES += \
