@@ -125,6 +125,9 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     $(LOCAL_PATH)/sepolicy
 
+# Sensor
+USE_SENSOR_MULTI_HAL := true
+
 # Vendor Symlink
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 TARGET_COPY_OUT_VENDOR := system
