@@ -1,4 +1,4 @@
-# Build By Incredible@One-Teams.Com
+# System properties for shamrock by OneTeam
 
 # Inherit device model from OEM partition
 import /oem/oem.prop ro.product.model
